@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        section {
+            display: flex;
+        }
+
+        nav {
+            background-color: lightpink;
+            flex: 2;
+            padding: 35px;
+            text-align: left;
+        }
+
+        article {
+            background-color: lightskyblue;
+            flex: 5;
+            padding: 35px;
+            text-align: left;
+        }
+
+        article h1 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        div {
+            background-color: lightsalmon;
+            flex: 5;
+            padding: 35px;
+            text-align: center;
+        }
+
+        div h2 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+
+        aside {
+            background-color: lightseagreen;
+            flex: 5;
+            padding: 35px;
+            text-align: center;
+        }
+
+        aside h1 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 50px;
+            padding-top: 10px;
+        }
+
+        @media (max-width:800px) {
+            section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cities</h1>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#kolhapur">Kolhapur</a></li>
+                <li><a href="#mumbai">Mumbai</a></li>
+                <li><a href="#pune">Pune</a></li>
+            </ul>
+        </nav>
+        <article id="kolhapur">
+            <h1>Kolhapur</h1>
+            <p>Kolhapur is a city on the banks of the Panchaganga River, in the west Indian state of Maharashtra. It’s
+                known for its temples, like the ancient Mahalakshmi Temple, a Hindu pilgrimage site. The Bhavani Mandap
+                is an imposing old palace with a small museum displaying stuffed wild animals. Close by, Rankala Lake is
+                surrounded by gardens. The hilltop Jyotiba Temple complex is on the city's outskirts.</p>
+        </article>
+        <div id="mumbai">
+            <h2>Mumbai</h2>
+            <p>Mumbai (formerly called Bombay) is a densely populated city on India’s west coast. A financial center,
+                it's India's largest city. On the Mumbai Harbour waterfront stands the iconic Gateway of India stone
+                arch, built by the British Raj in 1924. Offshore, nearby Elephanta Island holds ancient cave temples
+                dedicated to the Hindu god Shiva. The city's also famous as the heart of the Bollywood film industry.
+            </p>
+        </div>
+        <aside id="pune">
+            <h1>Pune</h1>
+            <p>Pune is a sprawling city in the western Indian state of Maharashtra. It was once the base of the Peshwas
+                (prime ministers) of the Maratha Empire, which lasted from 1674 to 1818. It's known for the grand Aga
+                Khan Palace, built in 1892 and now a memorial to Mahatma Gandhi, whose ashes are preserved in the
+                garden. The 8th-century Pataleshwar Cave Temple is dedicated to the Hindu god</p>
+        </aside>
+    </section>
+    <footer>
+        <h3>Footer</h3>
+    </footer>
+</body>
+
+</html>
